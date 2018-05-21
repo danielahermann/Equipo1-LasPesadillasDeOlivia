@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Chaser
+  - Arana
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Arboles
+    uniqueID: 2530689695
+    locked: 0
+  - name: Personaje
+    uniqueID: 2545915461
+    locked: 0
+  - name: Luz
+    uniqueID: 89514761
     locked: 0
