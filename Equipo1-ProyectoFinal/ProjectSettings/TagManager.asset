@@ -52,3 +52,6 @@ TagManager:
   - name: Luz
     uniqueID: 89514761
     locked: 0
+  - name: Plantas
+    uniqueID: 375480519
+    locked: 0
