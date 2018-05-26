@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Chaser
   - Arana
+  - Azul
+  - Rosado
+  - Verde
+  - Llave
+  - DestruyeCofre
+  - Cofre
+  - FinalPuerta
   layers:
   - Default
   - TransparentFX
@@ -43,6 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pociones
+    uniqueID: 791589841
+    locked: 0
   - name: Arboles
     uniqueID: 2530689695
     locked: 0
@@ -54,4 +64,7 @@ TagManager:
     locked: 0
   - name: Plantas
     uniqueID: 375480519
+    locked: 0
+  - name: Cofres
+    uniqueID: 2059793017
     locked: 0

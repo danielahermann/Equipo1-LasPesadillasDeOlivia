@@ -8,10 +8,10 @@ public class PersonajeMovimientos : MonoBehaviour {
 	public Animator OliviaAnimator;
 	// Use this for initialization
 
-	private Rigidbody2D rb2d;
+
 	void Start () {
 		OliviaAnimator= gameObject.GetComponent<Animator>();
-		rb2d = GetComponent<Rigidbody2D>();
+
 	}
 	
 	// Update is called once per frame
@@ -24,26 +24,19 @@ public class PersonajeMovimientos : MonoBehaviour {
 		float MovimientoX = inputX * Speed * Time.deltaTime;
 		float MovimientoY = inputY * Speed * Time.deltaTime;
 		transform.Translate(MovimientoX,MovimientoY,0);
-		//Vector2 movimiento = new Vector2 (MoviemientoX,MovimientoY);
 
-		//rb2d.AddForce (movimiento * Speed * Time.deltaTime);
-		// Mueve personaje hacia arriba
 
 		if (Input.GetKeyDown(KeyCode.W))
 		{
+			print ("Oprime w");
 			OliviaAnimator.SetTrigger("CaminaArriba");
 
 		}
 
-		/*if (Input.GetKey(KeyCode.W))
-		{
-			
-			this.gameObject.transform.Translate (0,Speed,0);
-		}*/
-
-
+	
 		if (Input.GetKeyUp(KeyCode.W))
 		{
+			print ("dejé de oprimir w");
 			OliviaAnimator.SetTrigger("Quieta");
 		}
 
@@ -54,12 +47,6 @@ public class PersonajeMovimientos : MonoBehaviour {
 			OliviaAnimator.SetTrigger("CaminaDerecha");
 
 		}
-
-		/*if (Input.GetKey(KeyCode.D))
-		{
-			
-			this.gameObject.transform.Translate (Speed,0,0);
-		}*/
 
 
 		if (Input.GetKeyUp(KeyCode.D))
@@ -75,11 +62,6 @@ public class PersonajeMovimientos : MonoBehaviour {
 
 		}
 
-		/*if (Input.GetKey(KeyCode.A))
-		{
-			
-			this.gameObject.transform.Translate (-Speed,0,0);
-		}*/
 
 		if (Input.GetKeyUp(KeyCode.A))
 		{
@@ -94,12 +76,6 @@ public class PersonajeMovimientos : MonoBehaviour {
 
 		}
 
-		/*if (Input.GetKey(KeyCode.S))
-		{
-			
-			this.gameObject.transform.Translate (0,-Speed,0);
-		}*/
-
 		if (Input.GetKeyUp(KeyCode.S))
 		{
 			OliviaAnimator.SetTrigger("Quieta");
@@ -107,16 +83,15 @@ public class PersonajeMovimientos : MonoBehaviour {
 
 		//El personaje se agacha
 
-		if (Input.GetKeyDown (KeyCode.Space)) 
+		/*if (Input.GetKeyDown (KeyCode.Space)) 
 		{
 			OliviaAnimator.SetTrigger ("Agachar");
 		}
 
 		if (Input.GetKeyUp(KeyCode.Space))
 		{
-			OliviaAnimator.SetTrigger("VolverDePie");
 			OliviaAnimator.SetTrigger("Quieta");
-		}
+		}*/
 
 	}
 
