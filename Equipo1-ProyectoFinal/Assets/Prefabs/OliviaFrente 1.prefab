@@ -202,6 +202,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114354352663670844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,7 +217,12 @@ MonoBehaviour:
   BarraDeVida: {fileID: 0}
   healthplayer: 100
   ValorQuitaVida: 30
+  ValorDaVida: 0
   pierde: {fileID: 0}
+  Gana: {fileID: 0}
+  ValorVidaBarra: 0
+  LuzAzul: {fileID: 0}
+  RecogeLlave: 0
 --- !u!114 &114594557527045252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +256,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -269,7 +276,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1749051835
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 47e3daa78615044f788be58d4f0110aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -294,6 +301,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -313,7 +321,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 89514761
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7fe8386e929792449cc93658879e833, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.841}

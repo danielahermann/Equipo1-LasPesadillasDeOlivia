@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 277643a6c9ee640ceadcd6efb721ba26
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - trigger: {fileID: 1650122120856516, guid: 72fcf2645301a0643a2f533bcadcda85, type: 2}
+  - audioClip: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
